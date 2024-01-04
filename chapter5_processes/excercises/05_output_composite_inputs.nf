@@ -1,0 +1,1 @@
+// Modify the script of example 18 so that the bam file is named as the given sample_id.
