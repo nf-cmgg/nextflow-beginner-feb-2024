@@ -1,0 +1,4 @@
+[
+    { "name": "Bob", "height": 180, "champion": false },
+    { "name": "Alice", "height": 170, "champion": false }
+]
