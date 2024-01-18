@@ -3,8 +3,8 @@ reads = Channel.fromPath('data/*.fq')
 process FOO {
     debug true
 
-    input:
-    path 'sample.fastq'
+    input: 
+    path 'sample.fastq' // Creates a path
 
     script:
     """

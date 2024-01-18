@@ -1,4 +1,4 @@
-// Assign a map
+// Assign a map => Dictionary in python
 map = [a: 0, b: 1, c: 2]
 
 // Common methods

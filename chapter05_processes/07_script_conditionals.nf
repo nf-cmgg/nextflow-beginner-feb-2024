@@ -5,7 +5,7 @@ process FOO {
     input:
     path file
 
-    script:
+    script: // Everything outside quotes is Groovy
     if (params.compress == 'gzip')
         """
         gzip -c $file > ${file}.gz

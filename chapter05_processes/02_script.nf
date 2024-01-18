@@ -1,5 +1,5 @@
 process EXAMPLE {
-    script:
+    script: // Default to bash
     """
     echo 'Hello world!\nHola mundo!\nCiao mondo!\nHallo Welt!' > file
     cat file | head -n 1 | head -c 5 > chunk_1.txt

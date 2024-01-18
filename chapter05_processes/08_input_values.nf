@@ -4,7 +4,7 @@ process BASICEXAMPLE {
     debug true
 
     input:
-    val x
+    val x // Creates a value
 
     script:
     """

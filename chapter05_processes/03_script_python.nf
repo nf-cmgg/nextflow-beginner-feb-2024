@@ -1,7 +1,7 @@
 process PYSTUFF {
     debug true
 
-    script:
+    script: // Use shebang for another programming language
     """
     #!/usr/bin/env python
 

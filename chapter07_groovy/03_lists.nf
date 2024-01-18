@@ -9,7 +9,7 @@ println list.get(0)
 /// Getting the size of a list
 println list.size()
 
-assert list[0] == 10
+assert list[0] == 10 // Assert checks if a condition is true
 
 // List objects implement all methods from java.util.List + some aditional methods provided by Groovy
 list = [0, 1, 2]

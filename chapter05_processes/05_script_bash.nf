@@ -1,7 +1,7 @@
 process FOO {
     debug true
 
-    script:
+    script: // Double quotes => allows use of external variables
     """
     FOO=Foo
     echo "This process does \$FOO"
@@ -11,7 +11,7 @@ process FOO {
 process BAR {
     debug true
 
-    script:
+    script: // Single quotes => allows only use of local bash scope variables
     '''
     BAR=Bar
     echo "This process does $BAR"

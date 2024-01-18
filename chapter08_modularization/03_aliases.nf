@@ -1,6 +1,7 @@
 params.greeting = 'Hello world!'
 greeting_ch = Channel.of(params.greeting)
 
+// use alias in configs!
 include { SPLITLETTERS as SPLITLETTERS_one } from './modules.nf'
 include { SPLITLETTERS as SPLITLETTERS_two } from './modules.nf'
 

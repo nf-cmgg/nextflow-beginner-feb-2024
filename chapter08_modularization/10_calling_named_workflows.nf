@@ -20,8 +20,8 @@ workflow my_workflow_two {
 }
 
 workflow {
-    my_workflow_one(Channel.of(params.greeting))
-    my_workflow_two(Channel.of(params.greeting))
+    my_workflow_one()
+    my_workflow_two()
 }
 
 // nextflow run 10_calling_named_workflows.nf -entry my_workflow_one

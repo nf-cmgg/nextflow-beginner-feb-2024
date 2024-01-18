@@ -4,7 +4,7 @@ methods = ['regular', 'espresso', 'psicoffee']
 process ALIGNSEQUENCES {
     debug true
 
-    input:
+    input: // Not often used
     path seq
     each mode
 
