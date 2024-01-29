@@ -1,6 +1,7 @@
 process PYSTUFF {
     debug true
 
+    // mamba install python
     script: // Use shebang for another programming language
     """
     #!/usr/bin/env python

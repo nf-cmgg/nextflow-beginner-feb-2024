@@ -1,7 +1,7 @@
 params.compress = 'gzip'
 params.file2compress = "$projectDir/data/small.fasta"
 
-process FOO {
+process COMPRESS_FILE {
     input:
     path file
 
@@ -19,5 +19,5 @@ process FOO {
 }
 
 workflow {
-    FOO(file(params.file2compress))
+    COMPRESS_FILE(file(params.file2compress))
 }

@@ -8,7 +8,7 @@ process FOO {
 
     script:
     """
-    ls  $sample
+    ls $sample
     """
 }
 
