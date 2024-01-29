@@ -4,7 +4,7 @@ if (x > 10)
 
 // null, "", '' and [] get evaluated to false
 list = []
-if (list)
+if (list) // Short for 'if (list.size() == 0)'
     println list
 else
     println 'The list is empty'

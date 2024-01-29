@@ -23,3 +23,4 @@ values = ["China": 1, "India": 2, "USA": 3]
 values.keySet().each { result += values[it] } 
 println result
 
+// Time for all exercises
