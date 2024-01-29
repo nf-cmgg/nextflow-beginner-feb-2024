@@ -3,7 +3,7 @@ params.greeting = 'Hello world!'
 include { SPLITLETTERS } from './modules.nf'
 include { CONVERTTOUPPER } from './modules_emit.nf'
 
-workflow my_workflow {
+workflow MY_WORKFLOW {
     take:
     greeting
 
@@ -17,7 +17,7 @@ workflow my_workflow {
 }
 
 workflow {
-    my_workflow(Channel.of(params.greeting))
-    my_workflow.out.view()
-    // my_workflow.out.my_data.view()
+    MY_WORKFLOW(Channel.of(params.greeting))
+    MY_WORKFLOW.out.view()
+    // MY_WORKFLOW.out.my_data.view()
 }

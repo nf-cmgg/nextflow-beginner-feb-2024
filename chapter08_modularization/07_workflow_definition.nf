@@ -4,7 +4,7 @@ include { SPLITLETTERS } from './modules.nf'
 include { CONVERTTOUPPER } from './modules_emit.nf'
 
 
-workflow my_workflow {
+workflow MY_WORKFLOW {
     greeting_ch = Channel.of(params.greeting)
     SPLITLETTERS(greeting_ch)
     CONVERTTOUPPER(SPLITLETTERS.out.flatten())
@@ -12,5 +12,5 @@ workflow my_workflow {
 }
 
 workflow {
-    my_workflow()
+    MY_WORKFLOW()
 }

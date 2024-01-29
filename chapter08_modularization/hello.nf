@@ -1,6 +1,6 @@
 params.foo = 'Hello'
 params.bar = 'world!'
 
-def SAYHELLO() {
+def say_hello() {
     println "$params.foo $params.bar"
 }
