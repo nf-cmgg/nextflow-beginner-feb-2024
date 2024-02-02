@@ -24,3 +24,5 @@ Channel
     .fromPath('data/random.json')
     .splitJson()
     .view()
+
+// Time for all exercises

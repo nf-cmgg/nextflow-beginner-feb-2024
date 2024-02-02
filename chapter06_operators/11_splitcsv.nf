@@ -24,5 +24,3 @@ Channel
     // use `sep` option to parse TAB separated files
     .splitCsv(sep: '\t')
     .view()
-
-// Time for exercise 03

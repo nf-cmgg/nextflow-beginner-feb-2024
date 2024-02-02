@@ -10,5 +10,3 @@ Channel
 Channel
     .fromPath('*.nf')
     .view()
-
-// Time for excercise 02

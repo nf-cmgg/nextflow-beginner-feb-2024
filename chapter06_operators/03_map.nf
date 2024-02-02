@@ -10,5 +10,3 @@ Channel
     .of('hello', 'world')
     .map { word -> [word, word.size()] } // custom named variables can be specified like this
     .view()
-
-// Time for exercise 01

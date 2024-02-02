@@ -20,5 +20,3 @@ process SUM {
 workflow {
     SUM(ch1, params.ch2).view()
 }
-
-// Time for exercise 01
