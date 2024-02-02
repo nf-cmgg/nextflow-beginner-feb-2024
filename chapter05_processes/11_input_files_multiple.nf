@@ -15,5 +15,3 @@ process FOO {
 workflow {
     FOO(reads.collect())
 }
-
-// Time for exercise 01

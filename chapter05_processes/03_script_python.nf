@@ -8,7 +8,7 @@ process PYSTUFF {
 
     x = 'Hello'
     y = 'world!'
-    print ("%s - %s" % (x, y))
+    print("%s - %s" % (x, y))
     """
 }
 

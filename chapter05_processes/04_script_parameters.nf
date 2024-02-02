@@ -4,8 +4,9 @@ process FOO {
     debug true
 
     script:
+    def country = "from Belgium"
     """
-    echo Hello $params.data
+    echo Hello $params.data $country
     """
 }
 

@@ -19,5 +19,3 @@ process FOO {
 workflow {
     FOO(ch1, ch2)
 }
-
-// Time for exercise 02

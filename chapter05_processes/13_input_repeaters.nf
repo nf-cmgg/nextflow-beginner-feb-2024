@@ -18,4 +18,4 @@ workflow {
     ALIGNSEQUENCES(sequences, methods)
 }
 
-// Time for exercise 03
+// Time for exercise 01, 02 & 03

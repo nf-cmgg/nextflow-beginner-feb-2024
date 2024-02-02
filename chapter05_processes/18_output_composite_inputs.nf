@@ -18,4 +18,4 @@ workflow {
     bam_ch.view()
 }
 
-// Time for exercise 05
+// Time for exercise 04 & 05

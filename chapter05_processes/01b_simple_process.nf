@@ -1,16 +1,16 @@
 process SAYHELLO {
-    debug true // Settings for this process
+    debug true // Directives: settings for this process
     cpus 2
 
-    input: // Input defined in workflow (channel)
+    input: // Input: inputs of the process
     val x
 
-    output: // Collects output in a queue channel
+    output: // Output: collects output in a queue channel
     stdout
 
-    when: true // Condition has to be met for the process to run
+    when: true // When: condition has to be met for the process to run
 
-    script: // What you want to do
+    script: // Script: what you want to do
     """
     echo "${x}"
     """

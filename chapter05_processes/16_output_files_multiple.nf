@@ -14,5 +14,3 @@ workflow {
         .flatMap()
         .view { "File: ${it.name} => ${it.text}" }
 }
-
-// Time for exercise 04
