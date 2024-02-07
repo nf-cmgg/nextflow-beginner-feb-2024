@@ -1,0 +1,26 @@
+#!/bin/bash
+#PBS -N training_fetchngs
+#PBS -o training_fetchngs.out
+#PBS -e training_fetchngs.err
+#PBS -l walltime=1:00:00
+#PBS -m abe
+
+ml load Nextflow/23.10.0
+
+export outputDir=$VSC_DATA/training_fetchngs
+mkdir -p ${outputDir}
+
+export WORKDIR=$VSC_SCRATCH/training_fetchngs/work
+mkdir -p ${WORKDIR}
+cd ${WORKDIR}
+
+nextflow \
+	run nf-core/fetchngs \
+	-r 1.11.0 \
+	-resume \
+	-work-dir ${WORKDIR} \
+	-profile vsc_ugent,$SLURM_CLUSTERS \
+	--input ${samplesheet} \
+	--outdir ${outputDir} 
+
+mv $HOME/training_fetchngs.* ${outputDir}
